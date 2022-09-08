@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(to left, #904e95, #e96443); 
+    
+    box-sizing: border-box;
+}
+
+#op_basic, #log, #pot, #por, #resultado, #raiz{
+    display: none;
+}
+
+#title{
+    text-align: center;
+    margin: 0%;
+    height: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid;
+}
+
+#calculadora{
+    font-family: sans-serif;
+    text-align: center;
+    position: relative;
+    width: 500px; 
+    height: auto;
+    background: rgba(231, 231, 231, 0.808); 
+    border: 3px solid rgba(202, 202, 202, 0.74);
+    margin: auto;
+    margin-top: 180px;
+    box-shadow: -7px 13px 37px rgb(44, 44, 44);
+    padding: 20px 30px;
+    border-top: #000;
+    border-right: #000;
+}
+
+.content-select select{
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+.content-select{
+	max-width: 250px;
+	position: relative;
+}
+ 
+.content-select select{
+    margin-left: 160px;
+	display: inline-block;
+	width: auto;
+	cursor: pointer;
+  	padding: 7px 10px;
+  	height: 42px;
+  	outline: 0; 
+  	border: 0;
+	border-radius: 0;
+	background: #f0f0f0;
+	color: #7b7b7b;
+	font-size: 1em;
+	color: rgb(0, 0, 0);
+	font-family: 'Quicksand', sans-serif;
+	border:2px solid rgba(0,0,0,0.2);
+    border-radius: 12px;
+    position: relative;
+    transition: all 0.25s ease;
+}
+ 
+.content-select select:hover{
+	background: linear-gradient(to right, #904e95bb, #e96443bb); 
+}
+
+
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input{
+    border: 1px;
+    padding: 5px 10px;
+}
+
+h5{
+    margin: 10px;
+    color: #312d2d;
+    font-weight: 30;
+}
+
+#n2, #nlog2, #npot2, #npor2, #nr{
+    margin-bottom: 30px;    
+}
+
+button{
+    appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+button{
+    margin: 2px;
+    padding: 10px;
+    border: 1px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: linear-gradient(to right, #904e95bb, #e96443bb);
+}

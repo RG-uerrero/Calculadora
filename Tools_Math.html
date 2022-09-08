@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:\Users\rober\Desktop\Platzi\Math.css">
+    <title>Tools</title>
+</head>
+<body>
+    
+    <form id="calculadora" name="" method="get">
+        <h2 id="title">Calculadora de operaciones Matematicas</h2>
+        <div class="content-select">
+            <select id="select_ope" onchange="opcion()">
+                <option value="vacio">Selecciona Operación</option>
+                <option value="op_basic" >Operaciones Basicas</option>
+                <option value="log">Logaritmo</option>
+                <option value="pot">Potencia</option>
+                <option value="por">Porcentaje</option>
+                <option value="Raiz">Raíz</option>
+            </select>
+        </div>
+        
+        <div id="op_basic">
+            <h5>Ingrese el valor 1:</h5>
+            <input type="number" id="n1" value="0">
+            <h5>Ingrese el valor 2:</h5>
+            <input type="number" id="n2" value="0">
+            <br>
+            <button onclick="suma();" type="button">Suma</button>
+            <button onclick="resta();" type="button">Resta</button>
+            <button onclick="multiplicar();" type="button">Multiplicación</button>
+            <button onclick="dividir();" type="button">División</button><br>    
+        </div>
+
+        <div id="log">
+            <h5>Ingrese argumento o logaritmo:</h5>
+            <input type="number" id="nlog1" value="0">
+            <h5>Ingrese la base:</h5>
+            <input type="number" id="nlog2" value="0"><br>
+            <button onclick="logaritmo();" type="button">Resultado</button>
+            <br>
+        </div>
+
+        <div id="pot">
+            <h5>Ingrese Base:</h5>
+            <input type="number" id="npot1" value="0">
+            <h5>Ingrese Exponente:</h5>
+            <input type="number" id="npot2" value="0"><br>
+            <button onclick="potencia();" type="button">Resultado</button>
+        </div>
+
+        <div id="por">
+            <h5>Valor:</p>
+            <input type="number" id="npor1" value="0">
+            <h5>Porcentaje:</h5>
+            <input type="number" id="npor2" value="0"><br>
+            <button onclick="porcentaje();" type="button">Resultado</button>
+        </div>
+        <br>         
+        <div id="raiz">
+            <h5>Número:</h5>
+            <input type="number" id="nr" value="0"><br>
+            <button onclick="raiz_2();" type="button">Raíz cuadrada</button>
+            <button onclick="raiz_3();" type="button">Raíz cubica</button>
+        </div>
+        <div id="resultado">
+            <p>El Resultado Es: <span id="resul"></span></p>
+        </div>
+    </form>
+    <script src="C:\Users\rober\Desktop\Platzi\Math.js"></script>
+</body>
+</html>
